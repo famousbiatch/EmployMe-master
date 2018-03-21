@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.employme.employme.JobList">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/action_bar" />
+
+    <ListView
+        android:id="@+id/lstJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spJobFilter" />
+
+    <Spinner
+        android:id="@+id/spJobFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/actionbar"
+        android:entries="@array/job_filter"
+        android:spinnerMode="dialog" />
+
+</RelativeLayout>
